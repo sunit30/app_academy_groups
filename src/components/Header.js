@@ -10,7 +10,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="headerFlex">
-        <h2>Unofficial group-work participation for App Academy JS/PY curriculum</h2>
+        <h2>Unofficial group-work/study-together participation for App Academy JS/PY curriculum</h2>
       </div>
     );
   }
