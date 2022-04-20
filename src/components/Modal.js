@@ -18,13 +18,12 @@ class Modal extends React.Component {
     let experience = document.getElementById("experience").value;
     let startDate = document.getElementById("startDate").value;
     let dmOK = document.getElementById("dmOK").value;
-    let groupFound = document.getElementById("groupFound").value;
     
 
     if (!name) {
       alert("Please complete the form");
     } else {
-      this.props.formeval(name, timeZone, hours, experience, startDate, dmOK, groupFound);
+      this.props.formeval(name, timeZone, hours, experience, startDate, dmOK);
     }
 
   };
@@ -46,7 +45,7 @@ class Modal extends React.Component {
 
           <form action="#">
             <div className="formflex">
-              <label htmlFor="name">* Slack Name : </label>
+              <label htmlFor="name">Slack Name* : </label>
 
               <input
               required
@@ -55,6 +54,7 @@ class Modal extends React.Component {
                 name="name"
               />
             </div>
+
             <div className="formflex">
               <label htmlFor="timeZone">Time Zone : </label>
 
@@ -98,15 +98,6 @@ class Modal extends React.Component {
                 type="text"
                 id="dmOK"
                 name="dmOK"
-              />
-            </div>
-            <div className="formflex">
-              <label htmlFor="groupFound">Group Found : </label>
-
-              <input
-                type="text"
-                id="groupFound"
-                name="groupFound"
               />
             </div>
             <br/>

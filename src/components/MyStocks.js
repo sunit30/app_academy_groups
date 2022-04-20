@@ -23,8 +23,6 @@ class MyStocks extends React.Component {
           <td>{object.startDate}</td>
 
           <td>{object.dmOK}</td>
-
-          <td>{object.groupFound}</td>          
         </tr>
       );
     });
@@ -42,7 +40,6 @@ class MyStocks extends React.Component {
                 <th>Experience</th>
                 <th>Start Date</th>
                 <th>DM OK</th>
-                <th>Group Found</th>
               </tr>
             </thead>
             <tbody>{tabData}</tbody>

@@ -75,7 +75,7 @@ class App extends React.Component {
   stopModal = () => {
     this.setState({ showModal: false });
   };
-  formEval = (name, timeZone, hours, experience, startDate, dmOK, groupFound) => {
+  formEval = (name, timeZone, hours, experience, startDate, dmOK) => {
 
     firebase
       .database()
@@ -85,8 +85,7 @@ class App extends React.Component {
         hours : hours,
         experience : experience,
         startDate: startDate,
-        dmOK: dmOK,
-        groupFound: groupFound,
+        dmOK: dmOK
         })
       .then(() => {
         this.updateState();

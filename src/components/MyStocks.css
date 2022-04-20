@@ -6,6 +6,7 @@ table {
   width: 80%;
   margin: auto;
   font-size: calc(0.3em + 1vw);
+  table-layout:fixed;
 }
 
 th,
@@ -16,6 +17,7 @@ td {
   border: 3px solid #bacbd9;
   padding: 0.9% 0.9%;
   text-align: center;
+  word-wrap:break-word;
 }
 th {
   color: white;
