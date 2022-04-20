@@ -27,7 +27,7 @@ class AddStocks extends React.Component {
 
     return (
       <div className="AddStocksTitle">
-        <h2>Add stocks to my stocks</h2>
+        <h2>Add yourself to the list!</h2>
         <div className="outerflex">{addData}</div>
       </div>
     );

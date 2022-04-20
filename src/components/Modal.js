@@ -41,7 +41,7 @@ class Modal extends React.Component {
           <span onClick={this.props.stopmodal} className="close">
             &times;
           </span>
-          <h2>Add {`${this.props.buttonselected.name}`} to My Stocks</h2>
+          <h2>Please fill in your basic details</h2>
 
           <form action="#">
             <div className="formflex">
