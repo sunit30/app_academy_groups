@@ -75,14 +75,19 @@ class App extends React.Component {
   stopModal = () => {
     this.setState({ showModal: false });
   };
-  formEval = (date, number, buyprice, name) => {
+  formEval = (name, timeZone, hours, experience, startDate, dmOK, groupFound) => {
 
     firebase
       .database()
       .ref("tableStocks/" + this.buttonSelected.newpostkey + "/")
       .set({ name: name,
-        number: number,
-        buyprice: buyprice })
+        timeZone : timeZone,
+        hours : hours,
+        experience : experience,
+        startDate: startDate,
+        dmOK: dmOK,
+        groupFound: groupFound,
+        })
       .then(() => {
         this.updateState();
       })

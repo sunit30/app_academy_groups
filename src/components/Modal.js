@@ -12,14 +12,19 @@ class Modal extends React.Component {
   }
 
   formProcess = () => {
-    let date = document.getElementById("buyDate").value;
-    let number = document.getElementById("noShares").value;
-    let buyprice = document.getElementById("buyPrice").value;
     let name = document.getElementById("name").value;
-    if (!date || !number || !buyprice) {
+    let timeZone = document.getElementById("timeZone").value;
+    let hours = document.getElementById("hours").value;
+    let experience = document.getElementById("experience").value;
+    let startDate = document.getElementById("startDate").value;
+    let dmOK = document.getElementById("dmOK").value;
+    let groupFound = document.getElementById("groupFound").value;
+    
+
+    if (!name) {
       alert("Please complete the form");
     } else {
-      this.props.formeval(date, number, buyprice, name);
+      this.props.formeval(name, timeZone, hours, experience, startDate, dmOK, groupFound);
     }
 
   };
@@ -41,38 +46,71 @@ class Modal extends React.Component {
 
           <form action="#">
             <div className="formflex">
-              <label htmlFor="name">Company Name:</label>
+              <label htmlFor="name">* Slack Name : </label>
 
               <input
+              required
                 type="text"
                 id="name"
                 name="name"
               />
             </div>
             <div className="formflex">
-              <label htmlFor="noShares">No. of Shares:</label>
+              <label htmlFor="timeZone">Time Zone : </label>
+
               <input
-                required
-                type="number"
-                id="noShares"
-                name="number"
-                min={1}
+                type="text"
+                id="timeZone"
+                name="timeZone"
               />
             </div>
             <div className="formflex">
-              <label htmlFor="buyPrice">Buy Price:</label>
+              <label htmlFor="hours">Hours : </label>
+
               <input
-                required
-                type="number"
-                id="buyPrice"
-                name="buyprice"
-                min={1}
+                type="text"
+                id="hours"
+                name="hours"
               />
             </div>
             <div className="formflex">
-              <label htmlFor="buyDate">Date:</label>
-              <input required type="date" id="buyDate" name="date" />
+              <label htmlFor="experience">Experience : </label>
+
+              <input
+                type="text"
+                id="experience"
+                name="experience"
+              />
             </div>
+            <div className="formflex">
+              <label htmlFor="startDate">Start Date : </label>
+
+              <input
+                type="text"
+                id="startDate"
+                name="startDate"
+              />
+            </div>
+            <div className="formflex">
+              <label htmlFor="dmOK">DM OK : </label>
+
+              <input
+                type="text"
+                id="dmOK"
+                name="dmOK"
+              />
+            </div>
+            <div className="formflex">
+              <label htmlFor="groupFound">Group Found : </label>
+
+              <input
+                type="text"
+                id="groupFound"
+                name="groupFound"
+              />
+            </div>
+            <br/>
+            <div> * Required </div>
             <div className="formflex1">
               <input
                 type="submit"
