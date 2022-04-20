@@ -45,7 +45,7 @@ class Modal extends React.Component {
 
           <form action="#">
             <div className="formflex">
-              <label htmlFor="name">Slack Name* : </label>
+              <label htmlFor="name">Slack username* : </label>
 
               <input
               required
@@ -56,7 +56,7 @@ class Modal extends React.Component {
             </div>
 
             <div className="formflex">
-              <label htmlFor="timeZone">Time Zone : </label>
+              <label htmlFor="timeZone">Time zone : </label>
 
               <input
                 type="text"
@@ -65,7 +65,7 @@ class Modal extends React.Component {
               />
             </div>
             <div className="formflex">
-              <label htmlFor="hours">Hours : </label>
+              <label htmlFor="hours">Approximate hours of study per week : </label>
 
               <input
                 type="text"
@@ -74,7 +74,7 @@ class Modal extends React.Component {
               />
             </div>
             <div className="formflex">
-              <label htmlFor="experience">Experience : </label>
+              <label htmlFor="experience">Experience in programming : </label>
 
               <input
                 type="text"
@@ -83,7 +83,7 @@ class Modal extends React.Component {
               />
             </div>
             <div className="formflex">
-              <label htmlFor="startDate">Start Date : </label>
+              <label htmlFor="startDate">Planned start date : </label>
 
               <input
                 type="text"
@@ -92,7 +92,7 @@ class Modal extends React.Component {
               />
             </div>
             <div className="formflex">
-              <label htmlFor="dmOK">DM OK : </label>
+              <label htmlFor="dmOK">Is it OK if someone reaches out over DM? : </label>
 
               <input
                 type="text"
